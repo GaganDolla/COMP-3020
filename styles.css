@@ -1,3 +1,70 @@
-body {
-  background-color: blue;
+nav {
+  background-color: #333;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  background-color: #555;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #444;
 }
