@@ -1,0 +1,18 @@
+.watermark{
+    display: block;
+    height:100%;
+    width:100%;
+}
+.watermark::after {
+    background:url(university-of-manitoba-logo_1.jpg);
+    opacity: 0.2;  
+    height:100%;
+    width:100%;
+}
+
+  /* .nav{
+  } */
+  .card-deck{
+    padding: 100px;
+    height: 600px;
+  }
