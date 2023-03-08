@@ -1,3 +1,3 @@
 # COMP-3020
 
-## Jared Mandap's html boilerplate branch
+## To run: open index.html file
