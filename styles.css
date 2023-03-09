@@ -1,18 +1,34 @@
-.watermark{
-    display: block;
-    height:100%;
-    width:100%;
-}
-.watermark::after {
-    background:url(university-of-manitoba-logo_1.jpg);
-    opacity: 0.2;  
-    height:100%;
-    width:100%;
+/* Navbar Styles */
+.navbar {
+  background-color: #000000; /* background color */
+  font-family: Arial, sans-serif; /* font family */
+  text-align: center !important;
 }
 
-  /* .nav{
-  } */
-  .card-deck{
-    padding: 100px;
-    height: 600px;
-  }
+.navbar-brand,
+.nav-link {
+  color: #212529; /* font color */
+  text-align: center !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #f2a900 !important; /* font color on hover of Navbar*/
+}
+
+.form-control {
+  border-color: #007bff; /* border color for the search input */
+}
+
+.btn-outline-success {
+  color: #000000 !important; /* font color for the search button */
+  border-color: #000000 !important; /* border color for the search button */
+}
+
+.btn-outline-success:hover {
+  background-color: #f2a900 !important; /* background color on hover for the search button */
+  color: #ffffff !important; /* font color on hover for the search button */
+  border-color: #ffffff !important;
+}
+
+/*Button Styles*/
