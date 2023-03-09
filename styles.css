@@ -1,6 +1,6 @@
 /* Navbar Styles */
 .navbar {
-  background-color: #000000; /* background color */
+  background-color: #000000; /* background color: white */
   font-family: Arial, sans-serif; /* font family */
   text-align: center !important;
 }
@@ -13,22 +13,26 @@
 
 .navbar-brand:hover,
 .nav-link:hover {
-  color: #f2a900 !important; /* font color on hover of Navbar*/
+  color: #f2a900 !important; /* font color on-hover of Navbar*/
 }
 
 .form-control {
-  border-color: #007bff; /* border color for the search input */
+  border-color: #00a3e0 !important; /* border color for search input */
 }
 
 .btn-outline-success {
-  color: #000000 !important; /* font color for the search button */
-  border-color: #000000 !important; /* border color for the search button */
+  color: #000000 !important; /* font color for search button */
+  border-color: #000000 !important; /* border color for search button */
 }
 
 .btn-outline-success:hover {
-  background-color: #f2a900 !important; /* background color on hover for the search button */
-  color: #ffffff !important; /* font color on hover for the search button */
+  background-color: #f2a900 !important; /* background color on-hover for search button */
+  color: #ffffff !important; /* font color on hover for search button */
   border-color: #ffffff !important;
 }
 
-/*Button Styles*/
+/*Card Styles*/
+.courses-container {
+  max-width: 1600px !important;
+  margin: 0 auto;
+}
