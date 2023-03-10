@@ -22,8 +22,8 @@
 }
 
 .btn-outline-success {
-  color: #000000 !important; /* font color for search button */
-  border-color: #000000 !important; /* border color for search button */
+  color: #ffffff !important; /* font color for search button */
+  border-color: #ffffff !important; /* border color for search button */
 }
 
 .btn-outline-success:hover {
@@ -36,4 +36,17 @@
 .courses-container {
   max-width: 1600px !important;
   margin: 0 auto;
+}
+
+/* Button Styles* */
+.btn {
+  background-color: #72726e !important;
+  text-color: #000000 !important;
+  border-color: #ffffff !important;
+}
+
+.btn:hover {
+  background-color: #f2a900 !important;
+  color: white !important; /* Change text color to white for contrast */
+  border-color: #ffffff !important;
 }
