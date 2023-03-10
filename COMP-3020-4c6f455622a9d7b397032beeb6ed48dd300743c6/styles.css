@@ -1,7 +1,6 @@
 /* Navbar Styles */
 .navbar {
-  background-color: #f2a900 !important; /* background color: white */
-  color: white !important;
+  background-color: #000000; /* background color: white */
   font-family: Arial, sans-serif; /* font family */
   text-align: center !important;
 }
