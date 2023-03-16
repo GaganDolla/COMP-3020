@@ -50,3 +50,9 @@
   color: white !important; /* Change text color to white for contrast */
   border-color: #ffffff !important;
 }
+
+/* Select Term Styles*/
+.dropdown-item:focus {
+  background-color: #f2a900 !important;
+  color: white !important;
+}
