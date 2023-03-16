@@ -56,3 +56,31 @@
   background-color: #f2a900 !important;
   color: white !important;
 }
+
+/* Department Fall Image */
+.footer_fall {
+  background-image: url("/Images/fall_unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  opacity: 0.8;
+}
+
+/* Department Winter Image */
+.footer_winter {
+  background-image: url("/Images/winter_unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  opacity: 0.8;
+}
