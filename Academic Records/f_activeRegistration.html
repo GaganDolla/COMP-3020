@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>COMP 3020</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="./script.js"></script> 
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -22,7 +22,7 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="/index.html">Aurora</a>
+      <a class="navbar-brand" href="../index.html">Aurora</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -37,43 +37,87 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/personalinfo.html"
+            <a class="nav-link" href="../personalinfo.html"
               >Personal Information <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/register.html">Register</a>
+            <a class="nav-link" href="../register.html">Register</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" id="searchInput" placeholder="Search" aria-label="Search" />          
-          <button class="btn btn-outline-success my-2 my-sm-0" id="searchButton" type="submit">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
             Search
           </button>
         </form>
       </div>
     </nav>
 
-    <!-- Padding -->
+    <!--Padding-->
     <div class="p-5"></div>
 
-    <!--Personal Info Card-->
-    <div class="card-deck">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Personal Info</h5>
-          <p class="card-text">
-            <a class="nav-link" href="#">Name</a>
-            <a class="nav-link" href="#">Date of Birth</a>
-            <a class="nav-link" href="#">Adress</a>
-            <a class="nav-link" href="#">Email</a>
-          </p>
+    <!-- Title/Select Term/Back Container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 text-left">
+          <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+        </div>
+        <div class="col-md-6">
+          <h2>Active Registration Fall 2023</h2>
+        </div>
+        <div class="col-md-2">
+          <div class="text-left">
+            <h4>Select a Term:</h4>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="text-left">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Fall 2023
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a
+                  class="dropdown-item"
+                  href="../Academic Records/f_activeRegistration.html"
+                  >Fall 2023</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="../Academic Records/w_activeRegistration.html"
+                  >Winter 2023</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <!--Padding-->
+    <div class="p-4"></div>
+
+    <!--Dummy Courses. 2 courses for now-->
+    <!-- Class 1 containers -->
+    <div class="courses-container" id="courses-container"></div>
+
+
+
     <!-- Optional JavaScript -->
-    <script src="./script.js" />
+    <script src="./arfScript.js" />
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
