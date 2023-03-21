@@ -59,7 +59,7 @@
 
 /* Department Fall Image */
 .footer_fall {
-  background-image: url("/Images/fall_unsplash.jpg");
+  background-image: url("./Images/fall_unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -73,7 +73,7 @@
 
 /* Department Winter Image */
 .footer_winter {
-  background-image: url("/Images/winter_unsplash.jpg");
+  background-image: url("./Images/winter_unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
