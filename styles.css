@@ -8,8 +8,8 @@
 
 .navbar-brand,
 .nav-link {
-  color: #212529; /* font color */
   text-align: center !important;
+  color: #212529;
 }
 
 .navbar-brand:hover,
@@ -59,7 +59,7 @@
 
 /* Department Fall Image */
 .footer_fall {
-  background-image: url("./Images/fall_unsplash.jpg");
+  background-image: url("https://images.unsplash.com/photo-1508255139162-e1f7b7288ab7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -73,7 +73,7 @@
 
 /* Department Winter Image */
 .footer_winter {
-  background-image: url("./Images/winter_unsplash.jpg");
+  background-image: url("https://images.unsplash.com/photo-1487424439918-bc6b5bef0380?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -83,4 +83,43 @@
   right: 0;
   height: 200px;
   opacity: 0.8;
+}
+
+/* Aurora Home Image */
+.footer_home {
+  background-image: url("https://images.unsplash.com/photo-1550198452-860e60435b58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  opacity: 0.9;
+}
+
+/* Register home image */
+.footer_register {
+  background-image: url("https://images.unsplash.com/photo-1457276587196-a9d53d84c58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  height: 200px;
+  opacity: 0.9;
+}
+
+/* Uni logo */
+.uni_logo {
+  width: 30%;
+  height: 100%;
+}
+
+/*aurora title*/
+.home_title {
+  margin-top: 30px;
 }
