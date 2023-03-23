@@ -112,156 +112,13 @@
 
     <!--Dummy Courses. 2 courses for now-->
     <!-- Class 1 containers -->
-    <div class="courses-container">
-      <div class="card">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-1">
-              <div class="form-check text-center">
-                <label class="form-check-label" for="53309">Select:</label>
-                <!--CHANGE for = CRN# -->
-                <br />
-                <!--CHANGE INPUT VALUES-->
-                <input
-                  class="form-check-input text-center"
-                  type="checkbox"
-                  id="53309"
-                  name="Math2020Winter"
-                />
-                <label class="form-check-label text-center" for="53309"></label>
-              </div>
-            </div>
-            <div class="col-md-1 text-auto">
-              CRN: <br />
-              <a id="CRN">53309</a>
-              <!--CHANGE CRN-->
-            </div>
-            <div class="col-md-1">
-              Sec: <br />
-              <!--CHANGE Section-->
-              A01
-            </div>
-            <div class="col-md-1">
-              Cred: <br />
-              <!--CHANGE Credit hours-->
-              3
-            </div>
-            <div class="col-md-2">
-              Title: <br />
-              <!--CHANGE Title-->
-              Algebra 1
-            </div>
-            <div class="col-md-1">
-              Days: <br />
-              <!--CHANGE Dates-->
-              MWF
-            </div>
-            <div class="col-md-1">
-              Time: <br />
-              <!--CHANGE Times-->
-              10:30 am-11:20 am
-            </div>
-            <div class="col-md-1">
-              Instructor: <br />
-              <!--CHANGE Instructor Name-->
-              Michelle P. Davidson
-            </div>
-            <div class="col-md-1">
-              Term: <br />
-              <!--CHANGE Term-->
-              Winter 2023
-            </div>
-            <div class="col-md-2">
-              Campus: <br />
-              <!--CHANGE Campus -->
-              Main (Fort Garry & Bannatyne)
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Padding-->
-    <div class="p-4"></div>
-
-    <!-- Class 1 containers -->
-    <div class="courses-container">
-      <div class="card">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-1">
-              <div class="form-check text-center">
-                <label class="form-check-label" for="50353">Select:</label>
-                <!--CHANGE for = CRN# -->
-                <br />
-                <!--CHANGE INPUT VALUES-->
-                <input
-                  class="form-check-input text-center"
-                  type="checkbox"
-                  id="50353"
-                  name="PHYS2650Winter"
-                />
-                <label class="form-check-label text-center" for="50353"></label>
-              </div>
-            </div>
-            <div class="col-md-1 text-auto">
-              CRN: <br />
-              <a id="CRN">50353</a>
-              <!--CHANGE CRN-->
-            </div>
-            <div class="col-md-1">
-              Sec: <br />
-              <!--CHANGE Section-->
-              A01
-            </div>
-            <div class="col-md-1">
-              Cred: <br />
-              <!--CHANGE Credit hours-->
-              3
-            </div>
-            <div class="col-md-2">
-              Title: <br />
-              <!--CHANGE Title-->
-              Classical Mechanics 1
-            </div>
-            <div class="col-md-1">
-              Days: <br />
-              <!--CHANGE Dates-->
-              TR
-            </div>
-            <div class="col-md-1">
-              Time: <br />
-              <!--CHANGE Times-->
-              02:30 pm-03:45 pm
-            </div>
-            <div class="col-md-1">
-              Instructor: <br />
-              <!--CHANGE Instructor Name-->
-              Peter G. Blunden (P)
-            </div>
-            <div class="col-md-1">
-              Term: <br />
-              <!--CHANGE Term-->
-              Winter 2023
-            </div>
-            <div class="col-md-2">
-              Campus: <br />
-              <!--CHANGE Campus -->
-              Main (Fort Garry & Bannatyne)
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Padding-->
-    <div class="p-3"></div>
+    <div class="courses-container" id="courses-container"></div>
 
     <!-- Drop Button -->
     <div class="container">
       <div class="row">
         <div class="col-md-1 ml-0">
-          <button class="btn btn-primary bg-color" id="dropCourse">
+          <button class="btn btn-primary bg-color" id="dropButton">
             Drop selected courses
           </button>
         </div>
@@ -269,6 +126,7 @@
     </div>
 
     <!-- Optional JavaScript -->
+    <script src="./arwScript.js" />
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
