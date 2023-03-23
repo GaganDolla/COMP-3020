@@ -6,7 +6,7 @@ const courses = [
       section: 'A01',
       term: 'Winter 2023',
       credits: 3,
-      crn: 50812,
+      crn: 11094,
       instructor: 'Farhan Islam (P)',
       days: 'TR',
       time: '02:30 pm-03:45 pm',
@@ -17,7 +17,7 @@ const courses = [
       section: 'A01',
       term: 'Winter 2023',
       credits: 3,
-      crn: 50813,
+      crn: 80971,
       instructor: 'Bibhuti Sarker (P)',
       days: 'MWF',
       time: '09:30 am-10:20 am',
@@ -28,7 +28,7 @@ const courses = [
       section: 'A01',
       term: 'Winter 2023',
       credits: 3,
-      crn: 52473,
+      crn: 14058,
       instructor: 'Ryan T. Cardwell (P)',
       days: 'TR',
       time: '10:00 am-11:15 am',
@@ -39,7 +39,7 @@ const courses = [
       section: 'A01',
       term: 'Winter 2023',
       credits: 3,
-      crn: 61360,
+      crn: 62219,
       instructor: 'Farhan Islam (P)',
       days: 'MWF',
       time: '11:30 am-12:20 pm',
@@ -50,7 +50,7 @@ const courses = [
       section: 'A01',
       term: 'Winter 2023',
       credits: 3,
-      crn: 50681,
+      crn: 73794,
       instructor: 'Chamila Nimalaratne (P)',
       days: 'MWF',
       time: '11:30 am-12:20 pm',
@@ -61,7 +61,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      crn: 52473,
+      crn: 73795,
       instructor: "Harold M. Aukema (P)",
       days: "TR",
       time: "01:00 pm-02:15 pm",
@@ -72,7 +72,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      crn: 50736,
+      crn: 73796,
       instructor: "Aayushi Kadam (P)",
       days: "TR",
       time: "10:00 am-11:15 am",
@@ -83,7 +83,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      crn: 60260,
+      crn: 73797,
       instructor: "Natalie D. Riediger (P)",
       days: "MW",
       time: "08:30 am-09:45 am",
@@ -244,6 +244,28 @@ const courses = [
       campus: "main (fort garry & bannatyne)"
     },
     {
+      name: "Object Orientation",
+      section: 'A01',
+      term: "winter 2023",
+      credits: 3,
+      crn: 12345,
+      instructor: "John Doe",
+      days: "mwf",
+      time: "12:30 pm - 1:45 pm",
+      campus: "main (fort garry & bannatyne)"
+    },
+    {
+      name: "Object Orientation",
+      section: 'A02',
+      term: "winter 2023",
+      credits: 3,
+      crn: 67891,
+      instructor: "John Doe",
+      days: "mwf",
+      time: "12:30 pm - 1:45 pm",
+      campus: "main (fort garry & bannatyne)"
+    },
+    {
       name: "Human-Computer Interaction 1",
       section: 'A01',
       term: "winter 2023",
@@ -252,17 +274,6 @@ const courses = [
       instructor: "Karel Kahula (P)",
       days: "tr",
       time: "01:00 pm-02:15 pm",
-      campus: "main (fort garry & bannatyne)"
-    },
-    {
-      name: "Data Structures and Algorithms",
-      section: 'A01',
-      term: "winter 2023",
-      credits: 3,
-      crn: 59525,
-      instructor: "John E. Anderson (P)",
-      days: "mwf",
-      time: "09:30 am-10:20 am",
       campus: "main (fort garry & bannatyne)"
     },
     {
@@ -440,7 +451,7 @@ function searchByCRN(crn) {
   crn = parseInt(crn);
   for (const course of Object.values(courses)) {
     if (course.crn === crn) {
-      if (registeredCourses.some(registeredCourse => registeredCourse && registeredCourse.crn === crn)) {
+      if (registeredCourses.some(registeredCourse => registeredCourse && registeredCourse.crn == crn)) {
         alert("You have already registered for this course.");
         return;
       }
@@ -449,19 +460,12 @@ function searchByCRN(crn) {
         registeredCourses[courseID] = course;
         sessionStorage.setItem('registeredCourses', JSON.stringify(registeredCourses)); // Store the updated registeredCourses array in sessionStorage
         displayCourses();
-      } else {
+      }
+      if(getAvailableCourseID() >= 5){
         alert("You have already registered for the maximum number of courses.");
       }
       return;
     }
-  }
-  alert(`No course was found with CRN ${crn}.`);
-}
-
-function dropCourse(crn) {
-  const index = registered.findIndex(course => course.crn === crn);
-  if (index !== -1) {
-    registered.splice(index, 1);
   }
 }
 
@@ -501,7 +505,7 @@ function dropCourse(crn) {
                   <div class="form-check text-center">
                     <label class="form-check-label" for="${course.crn}">Select:</label>
                     <br />
-                    <input class="form-check-input text-center" type="checkbox" id="${course.crn}" name="${course.title}" value="${course.crn}">
+                    <input class="form-check-input text-center" type="checkbox" name="${course.title}" value="${course.crn}">
                     <label class="form-check-label text-center" for="${course.crn}"></label>
                   </div>
                 </div>
@@ -517,7 +521,7 @@ function dropCourse(crn) {
                   Cred: <br />
                   ${course.credits}
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" id="label">
                   Title: <br />
                   ${course.name}
                 </div>
@@ -550,3 +554,46 @@ function dropCourse(crn) {
     }
     registeredCoursesContainer.innerHTML = coursesHtml;
   }
+
+  function dropCourse() {
+
+    // Get a reference to the courses container
+    const coursesContainer = document.getElementById("courses-container");
+    
+    // Get a list of all the checkboxes inside the courses container
+    const checkboxes = coursesContainer.querySelectorAll("input[type='checkbox']");
+    
+    // Loop through each checkbox to find the one that is checked
+    checkboxes.forEach(checkbox => {
+      if (checkbox.checked) {
+        // Get the course ID from the value of the checkbox
+        const courseId = checkbox.value;
+        
+        // Find the index of the course in the registeredCourses array
+        const courseIndex = registeredCourses.findIndex(course => course.crn == courseId);
+        
+        // If the course is found, remove it from the registeredCourses array
+        if (courseIndex !== -1) {
+          const originalLength = registeredCourses.length;
+          registeredCourses.splice(courseIndex, 1);
+
+          const newLength = registeredCourses.length;
+          for (let i = newLength; i < originalLength; i++) {
+            registeredCourses[i] = null;
+          }
+        }
+        
+        // Update the registeredCourses array in session storage
+        sessionStorage.setItem("registeredCourses", JSON.stringify(registeredCourses));
+        
+        // Update the list of courses displayed on the page
+        displayCourses();
+      }
+    });
+  }
+  
+
+  
+
+  const dropButton = document.querySelector('#dropButton');
+  dropButton.addEventListener('click', dropCourse);

@@ -457,7 +457,6 @@ for (const course of Object.values(courses)) {
     return;
   }
 }
-alert(`No course was found with CRN ${crn}.`);
 }
 
 
@@ -496,7 +495,7 @@ function displayCourses() {
                 <div class="form-check text-center">
                   <label class="form-check-label" for="${course.crn}">Select:</label>
                   <br />
-                  <input class="form-check-input text-center" type="checkbox" id="${course.crn}" name="${course.title}" value="${course.crn}">
+                  <input class="form-check-input text-center" type="checkbox" value="${course.crn}">
                   <label class="form-check-label text-center" for="${course.crn}"></label>
                 </div>
               </div>
@@ -545,3 +544,46 @@ function displayCourses() {
   }
   fregisteredCoursesContainer.innerHTML = coursesHtml;
 }
+
+function dropCourse() {
+
+  // Get a reference to the courses container
+  const coursesContainer = document.getElementById("courses-container");
+  
+  // Get a list of all the checkboxes inside the courses container
+  const checkboxes = coursesContainer.querySelectorAll("input[type='checkbox']");
+  
+  // Loop through each checkbox to find the one that is checked
+  checkboxes.forEach(checkbox => {
+    if (checkbox.checked) {
+      // Get the course ID from the value of the checkbox
+      const courseId = checkbox.value;
+      
+      // Find the index of the course in the registeredCourses array
+      const courseIndex = fregisteredCourses.findIndex(course => course.crn == courseId);
+      
+      // If the course is found, remove it from the registeredCourses array
+      if (courseIndex !== -1) {
+        const originalLength = fregisteredCourses.length;
+          fregisteredCourses.splice(courseIndex, 1);
+
+          const newLength = fregisteredCourses.length;
+          for (let i = newLength; i < originalLength; i++) {
+            fregisteredCourses[i] = null;
+          }
+      }
+      
+      // Update the registeredCourses array in session storage
+      sessionStorage.setItem("fregisteredCourses", JSON.stringify(fregisteredCourses));
+      
+      // Update the list of courses displayed on the page
+      displayCourses();
+    }
+  });
+}
+
+
+
+
+const dropButton = document.querySelector('#dropButton');
+dropButton.addEventListener('click', dropCourse);
