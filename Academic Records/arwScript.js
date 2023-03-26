@@ -94,7 +94,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      CRN: 59662,
+      crn: 59662,
       instructor: "Jorge A. Nallim (P)",
       days: "MWF",
       time: "09:30 am-10:20 am",
@@ -105,7 +105,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      CRN: 61010,
+      crn: 61010,
       instructor: "Esyllt Jones (P)",
       days: "TR",
       time: "11:30 am-12:45 pm",
@@ -116,7 +116,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      CRN: 62276,
+      crn: 62276,
       instructor: "Sean Carleton (P)",
       days: "TR",
       time: "01:00 pm-02:15 pm",
@@ -127,7 +127,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      CRN: 62277,
+      crn: 62277,
       instructor: "Mark A. Gabbert (P)",
       days: "T",
       time: "02:30 pm-05:15 pm",
@@ -138,7 +138,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      CRN: 50329,
+      crn: 50329,
       instructor: "Wan Wang (P)",
       days: "MWF",
       time: "09:30 am-10:20 am",
@@ -149,7 +149,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      CRN: 57129,
+      crn: 57129,
       instructor: "Jessica J. Cameron (P)",
       days: "TR",
       time: "10:00 am-11:15 am",
@@ -160,7 +160,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      CRN: 62208,
+      crn: 62208,
       instructor: "Nicholaus P. Brosowsky (P)",
       days: "MWF",
       time: "09:30 am-10:20 am",
@@ -171,7 +171,7 @@ const courses = [
       section: 'A01',
       term: "Winter 2023",
       credits: 3,
-      CRN: 62493,
+      crn: 62493,
       instructor: "Shaylene Nancekivell (P)",
       days: "W",
       time: "08:30 am-11:15 am",
@@ -418,6 +418,182 @@ const courses = [
       days: "MWF",
       time: "10:30 am-11:20 am",
       campus: "Main (Fort Garry & Bannatyne)"
+    },
+    {
+      name: "Introductory Financial Accounting",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 50048,
+      instructor: "Noha Ghattas (P)",
+      days: "MWF",
+      time: "11:30 am - 12:45 pm",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Intermediate Accounting - Assets",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 92556,
+      instructor: "Mingzhi Liu (P)",
+      days: "TR",
+      time: "10:00 am - 11:15 am",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Data Analytics in Accounting",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 62565,
+      instructor: "Zheng Liu (P)",
+      days: "MW",
+      time: "10:00 am - 11:15 am",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Auditing",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 34903,
+      instructor: "David Yu (P)",
+      days: "MW",
+      time: "10:00 am - 11:15 am",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Business and Society",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 11648,
+      instructor: "Yifan Wei (P)",
+      days: "MW",
+      time: "10:00 am - 11:15 am",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Business Communications",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 03055,
+      instructor: "Rakesh C. Mittoo (P)",
+      days: "MW",
+      time: "10:00 am - 11:15 am",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Commercial Law",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 36193,
+      instructor: "Ian A. Restall (P)",
+      days: "MW",
+      time: "08:30 am - 09:45 am",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Administrative Policy",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 01641,
+      instructor: "Jie Yang (P)",
+      days: "MW",
+      time: "10:00 am - 11:15 am",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Fundamentals of Marketing",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 68304,
+      instructor: "Kivalina E. Grove (P)",
+      days: "MW",
+      time: "11:30 am - 12:45 pm",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Marketing Research",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 53028,
+      instructor: "Nicholas Borodenko (P)",
+      days: "MW",
+      time: "01:00 pm - 02:15 pm",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Marketing Management",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 58507,
+      instructor: "Kiran K. Pedada (P)",
+      days: "MW",
+      time: "11:30 am - 12:45 pm",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Supply Chain and Operations Management",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 21412,
+      instructor: "Alok Dua (P)",
+      days: "MW",
+      time: "10:00 am - 11:15 am",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Transportation Principles",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 48698,
+      instructor: "Narendra D. Malalgoda (P)",
+      days: "MW",
+      time: "10:00 am - 11:15 am",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Supply Chain Sustainability",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 50334,
+      instructor: "Paul Larson (P)",
+      days: "MW",
+      time: "11:30 am - 12:45 pm",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+   {
+      name: "Advanced Supply Chain Managementg",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 71598,
+      instructor: "Srimantoorao S. Appadoo (P)",
+      days: "W",
+      time: "06:15 pm - 09:30 pm",
+      campus: "Main (Fort Garry & Bannatyne)"
+    },
+    {
+      name: "Introductory Financial Accounting",
+      section: 'A01',
+      term: "Winter 2023",
+      credits: 3,
+      crn: 62019,
+      instructor: "Noha Ghattas (P)",
+      days: "MW",
+      time: "11:30 am - 12:45 pm",
+      campus: "Main (Fort Garry & Bannatyne)"
     }
     
   ];
@@ -480,15 +656,14 @@ function searchByCRN(crn) {
       <div class="card">
         <div class="card-body">
           <div class="row">
-            <div class="col-md-1">
-              <div class="form-check text-center">
-                <p>No registered courses</p>
-              </div>
+            <div class="col-md-12 text-center">
+              <p>No registered courses</p>
             </div>
           </div>
         </div>
       </div>
-      `;
+
+    `;
       return;
     }
   
@@ -547,9 +722,9 @@ function searchByCRN(crn) {
                 </div>
               </div>
             </div>
-            <!--Padding-->
-    <div class="p-3"></div>
-          </div>
+            
+            <!-- Padding -->
+            <div class="p-2"></div>
           `;
         coursesHtml += courseHtml;
       }

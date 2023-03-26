@@ -13,7 +13,7 @@ function performSearch() {
       CRN: 50102,
       courseCode: 'COMP 1010',
       courseName: 'Introductory Computer Science 1',
-      url: '../../Winter2023/Faculty of Science/Comp Sci/w_sci_compsci_comp1010.html'
+      url: '/Courses/Winter2023/Faculty of Science/Comp Sci/w_sci_compsci_comp1010.html'
     },
     {
       CRN: 50140,
@@ -334,63 +334,37 @@ function performSearch() {
       url: './Courses/Winter2023/Faculty of Agricultural and Food Science/Human Nutritional Sciences/w_AaFS_HNSC4100.html'
     }
   ];
-  for (let i = 0; i < courses.length; i++) {
-    const j = i+1;
-    if(userInput == courses[i].courseCode || userInput == courses[i].courseName || userInput == courses[i].CRN.toString()){
-      window.open(courses[i].url);
-      break;
-    }
-    if(j == courses.length){
-      // Display an error message telling the user to refine their search
-      const errorMessage = document.createElement('div');
-      errorMessage.classList.add('alert', 'alert-danger', 'alert-dismissible', 'fade', 'show', 'in');
-      errorMessage.innerHTML = '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>Please use CNR, Course name and Course code for search.';
-      searchResultsContainer.appendChild(errorMessage);
-    }
+  let errorMessage = document.querySelector('.alert-danger');
 
+  if (userInput.length > 0) {
+    if (errorMessage) {
+      errorMessage.remove();
+    }
+    for (let i = 0; i < courses.length; i++) {
+      if (userInput.replace(/\s/g, '').toLowerCase() === courses[i].courseCode.replace(/\s/g, '').toLowerCase() || 
+        userInput.replace(/\s/g, '').toLowerCase() === courses[i].courseName.replace(/\s/g, '').toLowerCase() || 
+        userInput.replace(/\s/g, '').toLowerCase() === courses[i].CRN.toString().replace(/\s/g, '').toLowerCase()){
+        window.location.href = courses[i].url;
+        return;
+      }
+    }
+    const errorMessageHTML = '<div class="alert alert-danger alert-dismissible fade show text-right" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Please use CNR, Course name and Course code for search.</div>';
+    searchResultsContainer.insertAdjacentHTML('beforeend', errorMessageHTML);
+  } else {
+    if (errorMessage) {
+      return;
+    }
+    const errorMessageHTML = '<div class="alert alert-danger alert-dismissible fade show text-right" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Please use CNR, Course name and Course code for search.</div>';
+    searchResultsContainer.insertAdjacentHTML('beforeend', errorMessageHTML);
+  }
+  
+  const closeBtn = document.querySelector('.alert-danger button.close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function() {
+      const errorMessage = document.querySelector('.alert-danger');
+      if (errorMessage) {
+        errorMessage.remove();
+      }
+    });
   }
 }
-// function displaySearchResults(results) {
-//   const searchResultsContainer = document.getElementById('searchResults');
-
-//   // Remove any existing search results
-//   while (searchResultsContainer.firstChild) {
-//     searchResultsContainer.removeChild(searchResultsContainer.firstChild);
-//   }
-
-//   // Check the length of the search results array
-//   if (results.length === 0) {
-//     // Display a message saying no results were found
-//     const noResultsMessage = document.createElement('div');
-//     noResultsMessage.textContent = 'No results found.';
-//     searchResultsContainer.appendChild(noResultsMessage);
-//   } else if (results.length === 1) {
-//     // Redirect the user to the single search result
-//     window.location.href = results[0];
-//   } else {
-//     // Display an error message telling the user to refine their search
-//     const errorMessage = document.createElement('div');
-//     errorMessage.classList.add('alert', 'alert-danger', 'alert-dismissible', 'fade', 'show', 'in');
-//     errorMessage.innerHTML = '<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>Please use CNR, Course name and Course code for search.';
-//     searchResultsContainer.appendChild(errorMessage);
-//   }
-// }
-
-
-
-// for (let i = 0; i < urls.length; i++) {
-//     fetch(urls[i])
-//       .then(response => response.text())
-//       .then(data => {
-//         // Search for the query within the page content
-//         if (data.includes(searchQuery)) {
-//           // Add the URL to the search results array
-//           searchResults.push(urls[i]);
-//         }
-//         // Check if this is the last URL to search
-//         if (i === urls.length - 1) {
-//           displaySearchResults(searchResults);
-//         }
-//       })
-//       .catch(error => console.error(error));
-//   }
