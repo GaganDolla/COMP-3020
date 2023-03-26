@@ -49,14 +49,20 @@
             class="form-control mr-sm-2"
             type="search"
             placeholder="Search"
+            id="searchInput"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            id="searchButton"
+            type="submit"
+          >
             Search
           </button>
         </form>
       </div>
     </nav>
+    <div id="searchResults"></div>
 
     <!-- Padding -->
     <div class="p-4"></div>
@@ -157,6 +163,7 @@
     <footer class="footer_fall"></footer>
 
     <!-- Optional JavaScript -->
+    <script src="./script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
