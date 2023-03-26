@@ -34,17 +34,8 @@ const charges = [
         document.querySelector('#charges-table tbody').appendChild(row);
         }
       });
-    } else {
-      // If no registered courses, show message in table
-      const row = document.createElement('tr');
-      const messageCell = document.createElement('td');
-      messageCell.setAttribute('colspan', '2');
-      messageCell.textContent = 'No registered courses yet';
-      row.appendChild(messageCell);
-      document.querySelector('#charges-table tbody').appendChild(row);
-    }
-  
-    // Add the fixed charges to the total
+
+       // Add the fixed charges to the total
     charges.forEach((charge) => {
       total += charge.amount;
       
@@ -61,5 +52,14 @@ const charges = [
   
     // Set the total charge in the table footer
     document.querySelector('#total-charge').textContent = `$${total.toFixed(2)}`;
+    } else {
+      // If no registered courses, show message in table
+      const row = document.createElement('tr');
+      const messageCell = document.createElement('td');
+      messageCell.setAttribute('colspan', '2');
+      messageCell.textContent = 'No registered courses yet';
+      row.appendChild(messageCell);
+      document.querySelector('#charges-table tbody').appendChild(row);
+    }
 
   

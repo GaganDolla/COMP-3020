@@ -7,26 +7,45 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
-      table {
-        border-collapse: collapse;
-        width: 100%;
+      h1{
+        text-align: center;
       }
-      th, td {
-        text-align: left;
-        padding: 8px;
-        border-bottom: 1px solid #ddd;
-      }
-      th {
-        background-color: #f2f2f2;
-      }
-      .total {
-        font-weight: bold;
-      }
-      .header {
-      color: #3d3d3d;
-      text-align: center;
-      padding: 20px;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+    #charges-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #charges-table th,
+    #charges-table td {
+      border: none;
+    }
+
+    #charges-table th {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    #charges-table tfoot td {
+      font-weight: bold;
+    }
+
+    #total-charge  font-weigh{
+      font-size: 1.5rem;
+    }
+
+    .font-weight-bold {
+      font-weight: bold;
+    }
+
     </style>
   </head>
   <body>
@@ -82,9 +101,10 @@
     </div>
     <div class="header"></div>
     <h1>Account Summary</h1>
+    <div class="p-4"></div>
     </div>
-    <!-- HTML Code -->
-    <table id="charges-table">
+    <div class="container">
+      <table id="charges-table" class="table table-striped table-bordered">
         <thead>
           <tr>
             <th>Description</th>
@@ -96,13 +116,13 @@
         </tbody>
         <tfoot>
           <tr>
-            <td>Term Charges:</td>
+            <td class="font-weight-bold">Total Term Charges:</td>
             <td id="total-charge">$0.00</td>
           </tr>
         </tfoot>
       </table>
-  
-      
+    </div>
+
     <script src="./accSumScript.js"></script>
     <script src="./script.js"></script>
     <!-- Bootstrap JS -->

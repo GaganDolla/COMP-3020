@@ -9,7 +9,7 @@ const courses = [
       crn: 11094,
       instructor: 'Farhan Islam (P)',
       days: 'TR',
-      time: '02:30 pm-03:45 pm',
+      time: '02:30 pm - 03:45 pm',
       campus: 'Main (Fort Garry & Bannatyne)'
     },
     {
@@ -20,7 +20,7 @@ const courses = [
       crn: 80971,
       instructor: 'Bibhuti Sarker (P)',
       days: 'MWF',
-      time: '09:30 am-10:20 am',
+      time: '09:30 am - 10:20 am',
       campus: 'Main (Fort Garry & Bannatyne)'
     },
     {
@@ -31,7 +31,7 @@ const courses = [
       crn: 14058,
       instructor: 'Ryan T. Cardwell (P)',
       days: 'TR',
-      time: '10:00 am-11:15 am',
+      time: '10:00 am - 11:15 am',
       campus: 'Main (Fort Garry & Bannatyne)'
     },
     {
@@ -42,7 +42,7 @@ const courses = [
       crn: 62219,
       instructor: 'Farhan Islam (P)',
       days: 'MWF',
-      time: '11:30 am-12:20 pm',
+      time: '11:30 am - 12:20 pm',
       campus: 'Main (Fort Garry & Bannatyne)'
     },
     {
@@ -53,7 +53,7 @@ const courses = [
       crn: 73794,
       instructor: 'Chamila Nimalaratne (P)',
       days: 'MWF',
-      time: '11:30 am-12:20 pm',
+      time: '11:30 am - 12:20 pm',
       campus: 'Main (Fort Garry & Bannatyne)'
     },
     {
@@ -64,7 +64,7 @@ const courses = [
       crn: 73795,
       instructor: "Harold M. Aukema (P)",
       days: "TR",
-      time: "01:00 pm-02:15 pm",
+      time: "01:00 pm - 02:15 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -75,7 +75,7 @@ const courses = [
       crn: 73796,
       instructor: "Aayushi Kadam (P)",
       days: "TR",
-      time: "10:00 am-11:15 am",
+      time: "10:00 am - 11:15 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -86,7 +86,7 @@ const courses = [
       crn: 73797,
       instructor: "Natalie D. Riediger (P)",
       days: "MW",
-      time: "08:30 am-09:45 am",
+      time: "08:30 am - 09:45 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -97,7 +97,7 @@ const courses = [
       crn: 59662,
       instructor: "Jorge A. Nallim (P)",
       days: "MWF",
-      time: "09:30 am-10:20 am",
+      time: "09:30 am - 10:20 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -108,7 +108,7 @@ const courses = [
       crn: 61010,
       instructor: "Esyllt Jones (P)",
       days: "TR",
-      time: "11:30 am-12:45 pm",
+      time: "11:30 am - 12:45 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -119,7 +119,7 @@ const courses = [
       crn: 62276,
       instructor: "Sean Carleton (P)",
       days: "TR",
-      time: "01:00 pm-02:15 pm",
+      time: "01:00 pm - 02:15 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -130,7 +130,7 @@ const courses = [
       crn: 62277,
       instructor: "Mark A. Gabbert (P)",
       days: "T",
-      time: "02:30 pm-05:15 pm",
+      time: "02:30 pm - 05:15 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -141,7 +141,7 @@ const courses = [
       crn: 50329,
       instructor: "Wan Wang (P)",
       days: "MWF",
-      time: "09:30 am-10:20 am",
+      time: "09:30 am - 10:20 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -152,7 +152,7 @@ const courses = [
       crn: 57129,
       instructor: "Jessica J. Cameron (P)",
       days: "TR",
-      time: "10:00 am-11:15 am",
+      time: "10:00 am - 11:15 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -163,7 +163,7 @@ const courses = [
       crn: 62208,
       instructor: "Nicholaus P. Brosowsky (P)",
       days: "MWF",
-      time: "09:30 am-10:20 am",
+      time: "09:30 am - 10:20 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -174,7 +174,7 @@ const courses = [
       crn: 62493,
       instructor: "Shaylene Nancekivell (P)",
       days: "W",
-      time: "08:30 am-11:15 am",
+      time: "08:30 am - 11:15 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -185,7 +185,7 @@ const courses = [
       crn: 52785,
       instructor: "Elena Rabinoff (P)",
       days: "MWF",
-      time: "11:30 am-12:20 pm",
+      time: "11:30 am - 12:20 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -196,7 +196,7 @@ const courses = [
       crn: 62162,
       instructor: "Christopher Tillman (P)",
       days: "MWF",
-      time: "01:30 pm-02:20 pm",
+      time: "01:30 pm - 02:20 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -207,7 +207,7 @@ const courses = [
       crn: 62164,
       instructor: "Dimitrios Dentsoras (P)",
       days: "MWF",
-      time: "11:30 am-12:20 pm",
+      time: "11:30 am - 12:20 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -218,7 +218,7 @@ const courses = [
       crn: 62169,
       instructor: "Adam R. Murray (P)",
       days: "T",
-      time: "02:30 pm-05:15 pm",
+      time: "02:30 pm - 05:15 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -229,7 +229,7 @@ const courses = [
       crn: 50102,
       instructor: "Patrick M. Dubois (P)",
       days: "tr",
-      time: "12:30 pm-1:20 pm",
+      time: "12:30 pm - 1:20 pm",
       campus: "main (fort garry & bannatyne)"
     },
     {
@@ -240,7 +240,7 @@ const courses = [
       crn: 50140,
       instructor: "Phil Pitura (P)",
       days: "mwf",
-      time: "09:30 am-10:20 am",
+      time: "09:30 am - 10:20 am",
       campus: "main (fort garry & bannatyne)"
     },
     {
@@ -273,7 +273,7 @@ const courses = [
       crn: 61857,
       instructor: "Karel Kahula (P)",
       days: "tr",
-      time: "01:00 pm-02:15 pm",
+      time: "01:00 pm - 02:15 pm",
       campus: "main (fort garry & bannatyne)"
     },
     {
@@ -284,7 +284,7 @@ const courses = [
       crn: 59519,
       instructor: "Adam Pazdor (P)",
       days: "tr",
-      time: "02:30 pm-03:45 pm",
+      time: "02:30 pm - 03:45 pm",
       campus: "main (fort garry & bannatyne)"
     },  
     {
@@ -295,7 +295,7 @@ const courses = [
       crn: 53270,
       instructor: "Robert Craigen (P)",
       days: "MWF",
-      time: "12:30 pm-01:20 pm",
+      time: "12:30 pm - 01:20 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -306,7 +306,7 @@ const courses = [
       crn: 53275,
       instructor: "Michelle P. Davidson",
       days: "MWF",
-      time: "10:30 am-11:20 am",
+      time: "10:30 am - 11:20 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -317,7 +317,7 @@ const courses = [
       crn: 53285,
       instructor: "Nina Zorboska (P)",
       days: "TR",
-      time: "01:00 pm-02:15 pm",
+      time: "01:00 pm - 02:15 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -328,7 +328,7 @@ const courses = [
       crn: 53309,
       instructor: "Robert Martin (P)",
       days: "MW",
-      time: "02:30 pm-03:45 pm",
+      time: "02:30 pm - 03:45 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -339,7 +339,7 @@ const courses = [
       crn: 61976,
       instructor: "Prem B. Basnet (P)",
       days: "TR",
-      time: "11:30 am-12:45 pm",
+      time: "11:30 am - 12:45 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -350,7 +350,7 @@ const courses = [
       crn: 50353,
       instructor: "Peter G. Blunden (P)",
       days: "TR",
-      time: "02:30 pm-03:45 pm",
+      time: "02:30 pm - 03:45 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -361,7 +361,7 @@ const courses = [
       crn: 57057,
       instructor: "Andreas Shalchi (P)",
       days: "MWF",
-      time: "09:30 am-10:20 am",
+      time: "09:30 am - 10:20 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -372,7 +372,7 @@ const courses = [
       crn: 50359,
       instructor: "Savino Longo (P)",
       days: "MWF",
-      time: "11:30 am-12:20 pm",
+      time: "11:30 am - 12:20 pm",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -383,7 +383,7 @@ const courses = [
       crn: 50080,
       instructor: "Zenaida Mateo (P)",
       days: "MWF",
-      time: "10:30 am-11:20 am",
+      time: "10:30 am - 11:20 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -394,7 +394,7 @@ const courses = [
       crn: 50085,
       instructor: "Carrie B. Madden (P)",
       days: "MWF",
-      time: "09:30 am-10:20 am",
+      time: "09:30 am - 10:20 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -405,7 +405,7 @@ const courses = [
       crn: 59790,
       instructor: "Aerambamoorthy Thavaneswaran (P)",
       days: "MWF",
-      time: "10:30 am-11:20 am",
+      time: "10:30 am - 11:20 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -416,7 +416,7 @@ const courses = [
       crn: 60914,
       instructor: "Jenna G. Tichon (P)",
       days: "MWF",
-      time: "10:30 am-11:20 am",
+      time: "10:30 am - 11:20 am",
       campus: "Main (Fort Garry & Bannatyne)"
     },
     {
@@ -631,6 +631,12 @@ function searchByCRN(crn) {
         alert("You have already registered for this course.");
         return;
       }
+      for (const registeredCourse of Object.values(registeredCourses)) {
+        if (registeredCourse && isTimeConflict(registeredCourse.time, registeredCourse.days, course.time, course.days)) {
+          alert("This course has a time conflict with a course you have already registered.");
+          return;
+        }
+      }
       let courseID = getAvailableCourseID();
       if (courseID !== null) {
         registeredCourses[courseID] = course;
@@ -644,6 +650,52 @@ function searchByCRN(crn) {
     }
   }
 }
+
+function getTimeInMinutes(time) {
+  if (!time) {
+    return null;
+  }
+  
+  const [hour, minute] = time.split(':');
+  console.log(hour);
+  console.log(minute);
+  return parseInt(hour) * 60 + parseInt(minute);
+}
+
+
+
+function isTimeConflict(time1, days1, time2, days2) {
+  const [start1, end1] = time1.split(' - ');
+  const [start2, end2] = time2.split(' - ');
+  const start1Minutes = getTimeInMinutes(start1);
+  const end1Minutes = getTimeInMinutes(end1);
+  const start2Minutes = getTimeInMinutes(start2);
+  const end2Minutes = getTimeInMinutes(end2);
+
+  if (start1Minutes === null || end1Minutes === null || start2Minutes === null || end2Minutes === null) {
+    return false; // Cannot compare times if any of them are null
+  }
+
+  // Check if there's any overlap between the two time periods
+  if ((start1Minutes >= start2Minutes && start1Minutes < end2Minutes) ||
+      (end1Minutes > start2Minutes && end1Minutes <= end2Minutes) ||
+      (start2Minutes >= start1Minutes && start2Minutes < end1Minutes) ||
+      (end2Minutes > start1Minutes && end2Minutes <= end1Minutes)) {
+    // Check if any of the days overlap
+    for (const day1 of days1) {
+      if (days2.includes(day1)) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
+
+
+
+
+
 
   
   function displayCourses() {
