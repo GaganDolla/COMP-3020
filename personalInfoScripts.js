@@ -1,41 +1,49 @@
-// Get the form and save button elements
+// Check if initialized
+if (!sessionStorage.getItem("initialized")) {
+  // Initialize session storage with DUMMY values for the form fields
+  sessionStorage.setItem("name", "Sherlock Holmes");
+  sessionStorage.setItem("address", "221B Baker Street");
+  sessionStorage.setItem("email", "sherlockholmes@myumanitoba.ca");
+  sessionStorage.setItem("birthdate", "January 6, 1854");
+  sessionStorage.setItem("major", "Computer Science");
+  sessionStorage.setItem("student-number", "7654321");
+
+  sessionStorage.setItem("initialized", "true");
+}
+
 var form = document.querySelector("#profile-form");
 var saveButton = document.querySelector("#save_button");
 
-// Add an event listener to the save button
 saveButton.addEventListener("click", function (event) {
   event.preventDefault();
 
-  // Get the form data
-  var formData = new FormData(form);
+  var name = document.querySelector("#name-input").value;
+  var address = document.querySelector("#address-input").value;
+  var email = document.querySelector("#email-input").value;
+  var birthdate = document.querySelector("#birthdate-input").value;
+  var major = document.querySelector("#major-input").value;
+  var studentNumber = document.querySelector("#student-number-input").value;
 
-  // Save the form data to local storage
-  for (var pair of formData.entries()) {
-    localStorage.setItem(pair[0], pair[1]);
-  }
+  sessionStorage.setItem("name", name);
+  sessionStorage.setItem("address", address);
+  sessionStorage.setItem("email", email);
+  sessionStorage.setItem("birthdate", birthdate);
+  sessionStorage.setItem("major", major);
+  sessionStorage.setItem("student-number", studentNumber);
 
   alert("Personal Information updated");
 });
 
-// Fill in the form fields with data from local storage
-if (localStorage.getItem("name")) {
-  document.querySelector("#name-input").value = localStorage.getItem("name");
-}
-if (localStorage.getItem("address")) {
-  document.querySelector("#address-input").value =
-    localStorage.getItem("address");
-}
-if (localStorage.getItem("email")) {
-  document.querySelector("#email-input").value = localStorage.getItem("email");
-}
-if (localStorage.getItem("birthdate")) {
-  document.querySelector("#birthdate-input").value =
-    localStorage.getItem("birthdate");
-}
-if (localStorage.getItem("major")) {
-  document.querySelector("#major-input").value = localStorage.getItem("major");
-}
-if (localStorage.getItem("student-number")) {
-  document.querySelector("#student-number-input").value =
-    localStorage.getItem("student-number");
-}
+//Fill fields for revisit
+document.querySelector("#name-input").value =
+  sessionStorage.getItem("name") || "Sherlock Holmes";
+document.querySelector("#address-input").value =
+  sessionStorage.getItem("address") || "221B Baker Street";
+document.querySelector("#email-input").value =
+  sessionStorage.getItem("email") || "sherlockholmes@myumanitoba.ca";
+document.querySelector("#birthdate-input").value =
+  sessionStorage.getItem("birthdate") || "January 6, 1854";
+document.querySelector("#major-input").value =
+  sessionStorage.getItem("major") || "Computer Science";
+document.querySelector("#student-number-input").value =
+  sessionStorage.getItem("student-number") || "7654321";
