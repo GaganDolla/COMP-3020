@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Account Summary</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .total {
+        font-weight: bold;
+      }
+      .header {
+      color: #3d3d3d;
+      text-align: center;
+      padding: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">Aurora</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./personalinfo.html"
+                >Personal Information <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./register.html">Register</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              id="searchInput"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success my-2 my-sm-0"
+              id="searchButton"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+     </nav>
+    <div id="searchResults"></div>
+		<!--Padding-->
+		<div class="p-4"></div>
+    <div>
+        <div class="col-md-2 text-left">
+        <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+    </div>
+    <div class="header"></div>
+    <h1>Account Summary</h1>
+    </div>
+    <!-- HTML Code -->
+    <table id="charges-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Charge</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic table rows will be added here -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Term Charges:</td>
+            <td id="total-charge">$0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+  
+      
+    <script src="./accSumScript.js"></script>
+    <script src="./script.js"></script>
+    <!-- Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
