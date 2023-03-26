@@ -37,63 +37,106 @@
 </head>
 <body>
 	<body>
-		<div class="container">
-		  <div class="header">
-			<h1>Week at a Glance</h1>
-			<p>March 21-27, 2023</p>
-		  </div>
-		  <div class="row">
-			<div class="col-md-2 day">
-			  <h3>Monday</h3>
-			  <p class="current-day">Today</p>
-			  <div class="task">
-				<p>9:00 AM - Meeting with team</p>
-				<p>11:00 AM - Project presentation</p>
-				<p>2:00 PM - Client call</p>
-			  </div>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="./index.html">Aurora</a>
+			<button
+			  class="navbar-toggler"
+			  type="button"
+			  data-toggle="collapse"
+			  data-target="#navbarNav"
+			  aria-controls="navbarNav"
+			  aria-expanded="false"
+			  aria-label="Toggle navigation"
+			>
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="./personalinfo.html"
+					>Personal Information <span class="sr-only">(current)</span></a
+				  >
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="./register.html">Register</a>
+				</li>
+			  </ul>
+			  <form class="form-inline my-2 my-lg-0">
+				<input
+				  class="form-control mr-sm-2"
+				  type="search"
+				  placeholder="Search"
+				  id="searchInput"
+				  aria-label="Search"
+				/>
+				<button
+				  class="btn btn-outline-success my-2 my-sm-0"
+				  id="searchButton"
+				  type="submit"
+				>
+				  Search
+				</button>
+			  </form>
 			</div>
-			<div class="col-md-2 day">
-			  <h3>Tuesday</h3>
-			  <div class="task">
-				<p>10:00 AM - Training session</p>
-				<p>1:00 PM - Lunch meeting</p>
-				<p>3:00 PM - Project planning</p>
-			  </div>
-			</div>
-			<div class="col-md-2 day">
-			  <h3>Wednesday</h3>
-			  <div class="task">
-				<p>9:00 AM - Budget review</p>
-				<p>11:00 AM - Marketing meeting</p>
-				<p>3:00 PM - Project updates</p>
-			  </div>
-			</div>
-			<div class="col-md-2 day">
-			  <h3>Thursday</h3>
-			  <div class="task">
-				<p>10:00 AM - Team building activity</p>
-				<p>1:00 PM - Lunch meeting</p>
-				<p>3:00 PM - Project planning</p>
-			  </div>
-			</div>
-			<div class="col-md-2 day">
-			  <h3>Friday</h3>
-			  <div class="task">
-				<p>9:00 AM - Budget review</p>
-				<p>11:00 AM - Marketing meeting</p>
-				<p>3:00 PM - Project updates</p>
-			  </div>
-			</div>
-			<div class="col-md-2 day">
-			  <h3>Saturday</h3>
-			  <div class="task">
-				<p>10:00 AM - Client call</p>
-				<p>1:00 PM - Lunch meeting</p>
-				<p>3:00 PM - Project planning</p>
-			  </div>
-			</div>
-		  </div>
+		 </nav>
+		<div id="searchResults"></div>
+	  
+		<!--Padding-->
+		<div class="p-4"></div>
+
+		<div>
+			<div class="col-md-2 text-left">
+			  <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
 		</div>
+
+		<div class="container">
+			<div class="header">
+			  <h1>Week at a Glance</h1>
+			  <p>March 21-27, 2023</p>
+			</div>
+			<div class="row">
+			  <div class="col-md-2 day">
+				<h3>Monday</h3>
+				<p class="current-day">Today</p>
+				<div class="task">
+				  <p id="monday-task"></p>
+				</div>
+			  </div>
+			  <div class="col-md-2 day">
+				<h3>Tuesday</h3>
+				<div class="task">
+				  <p id="tuesday-task"></p>
+				</div>
+			  </div>
+			  <div class="col-md-2 day">
+				<h3>Wednesday</h3>
+				<div class="task">
+				  <p id="wednesday-task"></p>
+				</div>
+			  </div>
+			  <div class="col-md-2 day">
+				<h3>Thursday</h3>
+				<div class="task">
+				  <p id="thursday-task"></p>
+				</div>
+			  </div>
+			  <div class="col-md-2 day">
+				<h3>Friday</h3>
+				<div class="task">
+				  <p id="friday-task"></p>
+				</div>
+			  </div>
+			  <div class="col-md-2 day">
+				<h3>Saturday</h3>
+				<div class="task">
+				  <p id="saturday-task"></p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<footer class="footer_home"></footer>
+		<script src="./weekAtGlanceScript.js"></script>
 		<!-- Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
