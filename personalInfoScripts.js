@@ -4,7 +4,8 @@ if (!sessionStorage.getItem("initialized")) {
   sessionStorage.setItem("name", "Sherlock Holmes");
   sessionStorage.setItem("address", "221B Baker Street");
   sessionStorage.setItem("email", "sherlockholmes@myumanitoba.ca");
-  sessionStorage.setItem("birthdate", "January 6, 1854");
+  const bday = new Date("January 6, 1854");
+  sessionStorage.setItem("birthdate", bday.toISOString());
   sessionStorage.setItem("major", "Computer Science");
   sessionStorage.setItem("student-number", "7654321");
 
@@ -15,7 +16,7 @@ var form = document.querySelector("#profile-form");
 var saveButton = document.querySelector("#save_button");
 
 saveButton.addEventListener("click", function (event) {
-  event.preventDefault();
+  // event.preventDefault();
 
   var name = document.querySelector("#name-input").value;
   var address = document.querySelector("#address-input").value;
@@ -42,7 +43,7 @@ document.querySelector("#address-input").value =
 document.querySelector("#email-input").value =
   sessionStorage.getItem("email") || "sherlockholmes@myumanitoba.ca";
 document.querySelector("#birthdate-input").value =
-  sessionStorage.getItem("birthdate") || "January 6, 1854";
+  sessionStorage.getItem("birthdate") || bday.toISOString();
 document.querySelector("#major-input").value =
   sessionStorage.getItem("major") || "Computer Science";
 document.querySelector("#student-number-input").value =
