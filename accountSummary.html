@@ -1,107 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Account Summary</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
     <style>
-      h1{
+      h1 {
         text-align: center;
       }
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    #charges-table {
-      border-collapse: collapse;
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: rgba(255, 255, 255, 0.8);
-    }
+      #charges-table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
 
-    #charges-table th,
-    #charges-table td {
-      border: none;
-    }
+      #charges-table th,
+      #charges-table td {
+        border: none;
+      }
 
-    #charges-table th {
-      background-color: #007bff;
-      color: #fff;
-    }
+      #charges-table th {
+        background-color: #007bff;
+        color: #fff;
+      }
 
-    #charges-table tfoot td {
-      font-weight: bold;
-    }
+      #charges-table tfoot td {
+        font-weight: bold;
+      }
 
-    #total-charge  font-weigh{
-      font-size: 1.5rem;
-    }
+      #total-charge font-weigh {
+        font-size: 1.5rem;
+      }
 
-    .font-weight-bold {
-      font-weight: bold;
-    }
-
+      .font-weight-bold {
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html">Aurora</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./personalinfo.html"
-                >Personal Information <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./register.html">Register</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              id="searchInput"
-              aria-label="Search"
-            />
-            <button
-              class="btn btn-outline-success my-2 my-sm-0"
-              id="searchButton"
-              type="submit"
+      <a class="navbar-brand" href="./index.html">Aurora</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./personalinfo.html"
+              >Personal Information <span class="sr-only">(current)</span></a
             >
-              Search
-            </button>
-          </form>
-        </div>
-     </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./register.html">Register</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            id="searchInput"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            id="searchButton"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
     <div id="searchResults"></div>
-		<!--Padding-->
-		<div class="p-4"></div>
-    <div>
-        <div class="col-md-2 text-left">
-        <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
-    </div>
-    <div class="header"></div>
-    <h1>Account Summary</h1>
+    <!--Padding-->
     <div class="p-4"></div>
+    <div>
+      <div class="col-md-2 text-left">
+        <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+      </div>
+      <div class="header"></div>
+      <h1>Account Summary</h1>
+      <div class="p-4"></div>
     </div>
     <div class="container">
       <table id="charges-table" class="table table-striped table-bordered">
@@ -126,8 +128,8 @@
     <script src="./accSumScript.js"></script>
     <script src="./script.js"></script>
     <!-- Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
 </html>
