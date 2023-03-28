@@ -71,6 +71,20 @@
   opacity: 0.8;
 }
 
+/* Final Grades Fall Image */
+.footer_fallFinalGrade {
+  background-image: url("https://images.unsplash.com/photo-1508255139162-e1f7b7288ab7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  opacity: 0.8;
+}
+
 /* Department Winter Image */
 .footer_winter {
   background-image: url("https://images.unsplash.com/photo-1487424439918-bc6b5bef0380?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80");
@@ -82,6 +96,20 @@
   left: 0;
   right: 0;
   height: 200px;
+  opacity: 0.8;
+}
+
+/* Final Grades Winter Image */
+.footer_winterFinalGrade {
+  background-image: url("https://images.unsplash.com/photo-1487424439918-bc6b5bef0380?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
   opacity: 0.8;
 }
 
