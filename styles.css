@@ -153,26 +153,28 @@
     height: 200px;
     opacity: 0.9;
   }
-  .footer_fall {
-    height: 300px;
-  }
-  /* more styles for larger screens */
 }
 
-/* styles for medium-sized screens */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-height: 700px) and (max-width: 1023px) {
   /* CSS code for medium-sized screens */
-  .footer_fall {
+  .footer_fall,
+  .footer_winterFinalGrade,
+  .footer_winter,
+  .footer_winterFinalGrade,
+  .footer_home,
+  .footer_register {
     height: 250px;
   }
-  /* more styles for medium-sized screens */
 }
 
-/* styles for smaller screens */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-height: 700px) {
   /* CSS code for smaller screens */
-  .footer_fall {
-    height: 200px;
+  .footer_fall,
+  .footer_winterFinalGrade,
+  .footer_winter,
+  .footer_winterFinalGrade,
+  .footer_home,
+  .footer_register {
+    height: 50px;
   }
-  /* more styles for smaller screens */
 }
